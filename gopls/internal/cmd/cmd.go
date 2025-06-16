@@ -279,7 +279,7 @@ func (app *Application) internalCommands() []tool.Application {
 func (app *Application) featureCommands() []tool.Application {
 	return []tool.Application{
 		&callHierarchy{app: app},
-		&check{app: app, Severity: "warning"},
+		&check{app: app, Severity: "error"},
 		&codeaction{app: app},
 		&codelens{app: app},
 		&definition{app: app},
